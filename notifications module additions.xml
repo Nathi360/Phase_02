@@ -1,0 +1,19 @@
+<diagram program="umletino" version="14.2"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>430</x><y>150</y><w>350</w><h>210</h></coordinates><panel_attributes>/NotificationManager/
+--
+ -listOfNotifications : List&lt;Notification&gt;
+--
+ +notifyUser( :User, :Notification): 
+ +notifyListOfUsers( :List&lt;User&gt;, Notification)
+ +addNotification(:Notification)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>490</x><y>410</y><w>400</w><h>210</h></coordinates><panel_attributes>/Notification/
+--
+ - name: String
+ - message : String
+ - type: String
+--
+ +registerNotifs()
+ +getMessage() : String
+ +setMessage(:String) 
+ +getType() : String
+ +setType(:String)
+ +getName() : String
+</panel_attributes><additional_attributes></additional_attributes></element></diagram>
