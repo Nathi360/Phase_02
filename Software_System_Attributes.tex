@@ -1,0 +1,52 @@
+\documentclass[11pt]{article}
+\usepackage{parskip}
+
+\begin{document}
+
+\section{Software System Attributes}
+
+The attributes of a system collectively describe major components and aspect of it. There are four main categories each of which contain a wide variety of sub-categories which describe different aspects of the system ranging all the way from user interaction to the hardware the system will run on. 
+
+\subsection{Design Qualities}
+
+\begin{itemize}
+
+\item Conceptual integrity: as the different modules of the application will be designed by different individuals, maintaining conceptual integrity will require standardisation of documentation, user interface design and programming methodologies.  	
+\item Maintainability: changing and adding to the application should be 		done in a manner in which an addition or removal of an element from one 		module should only require that element to be incorporated or erased from 	the other modules without effect the rest of the functionality. 
+\item Reusability: as the application caters for a specific need, the 			reusability for the NavUP system may be limited to applications that only 	require some form of positioning system using a wireless network interface. 
+ 
+\end{itemize}
+
+\subsection{Run-time Qualities}
+
+\begin{itemize}
+
+\item Availability: the availability of the systems position features will be dependent on the user’s location on campus and whether or not there are any wireless connection points within the vicinity. If there are no connection points a downtime of directional services can be expected. This offline functionality will allow the user to still see the map but, not have an update on heat maps or location.  	
+\item Interoperability: the system will involve information exchange between devices in order to determine the amount of devices that are present within the vicinity. This information will then be relayed to the device in order to determine the best directional navigation based on the users location, their destination and the density of individuals (that are using the application) within the vicinity.  
+\item Manageability: system administrators will be able to manage the application through various means. They can receive feedback from the numerous amount of students that use the system as well as test the application themselves if fine tuning is necessary. Accuracy of directions can also be tested for in a simulated environment where heat maps values are entered into the program along with destination and location to determine whether the program does indeed produce the shortest or simplest route. 
+\item Performance: As a wireless connection will be used to determine various pieces of information the latency between the device and router should vary depending on signal on the signal strength and congestion of that connection point. The heat maps occur in real time thus, minimising the latency between updates. 
+\item Reliability: the reliability of the NavUP system will solely depend on whether or not the user can connect to wireless access points. If there are no routers within the users vicinity the user will not be able to obtain full functionality from the application. A lot of the campus has Wi-Fi hot spot access thus, the system should have a high reliability rate.  
+\item Scalability: the congestion of users accessing the wireless network on a single route will determine the systems scalability. In general the wireless network of the university can support many concurrent users thus, allowing the system to be operational from small to large scale situations.  
+\item Security: as the user is only prompted minimal information such as, destination and an optional timetable entry the risk of any private information being compromised is minimised. The information will be stored in manner that if the application is indeed compromised there will not be a clear distinction as to whose timetable schedule belongs whom.  
+
+\end{itemize}
+
+\subsection{System Qualities}
+
+\begin{itemize}
+
+\item Supportability: If there is no connection to the wireless network the user needs to be notified of the limited functionality that they will receive. The user also needs to be notified if they enter incorrect destination names. 	
+\item Testability: the system can be tested with ease as all users creating the application have access to the campus environment as well as, the wireless network connection. Creators can traverse the campus to ensure their system is operating as expected. Other students could also be asked to test the applications interface and other various features  
+
+\end{itemize}
+
+\subsection{User Qualities}
+
+\begin{itemize}
+
+\item Usability: the NavUP system needs to have an easy to use interface which also caters for those who are visually impaired. The interface needs to prioritise easy to interpret directions and user friendly geographical maps which clearly indicate important locations.  	
+
+\end{itemize}
+
+\end{document}
+

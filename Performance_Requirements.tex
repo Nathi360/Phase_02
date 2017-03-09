@@ -1,0 +1,17 @@
+\documentclass[11pt]{article}
+\usepackage{parskip}
+
+\begin{document}
+
+\section{Performance Requirements}
+
+Performance requirements for any form of software is an important aspect to consider. As NavUP will be running on a mobile platform where resources are more limited than that of a laptop or desktop the software will need to be optimised to run as efficiently as possible.
+
+One of the most important things to consider with mobile software is how much battery power does it consume whilst it is running in the foreground or background. While running in the foreground the largest consuming factors of processing power and battery life (excluding user settings for the phone such as screen brightness etc) would be the direction generation and heat map information that is pulled from the server. When the user minimises the application the most efficient and effective way for it to run in the background should be to halt updating the user’s location as well as, pulling any heat map data. This will save energy being needlessly used by the application and allow the phones battery to last longer. 
+
+Taking a look at the heat maps the server will need to do a lot of the processing with regards to where users are located in the vicinity. That will then be relayed to the smartphone of users trying to navigate through campus so that the shortest or simplest routes can be calculated. The heat maps will then be updated to the phone and displayed as an overlay on the map. The updates for the heat maps will also need to occur as a real time update. This update frequency will definitely require a relative amount of processing power from the smartphone so that it can constantly show the heat maps as well as update the directions based on them.
+
+The geographical maps will most likely be images that do not exceed a full HD resolution so that the application does not take up too much space on the phone. They will also be stored on the phone to limit the amount of data that constantly needs to be pulled from the server and allow for more important features to take precedence. Another benefit will be that the images will load a lot more quickly. They can be of a .jpg type image compression which will result to around 50 MB of storage for just the images). 
+
+\end{document}
+

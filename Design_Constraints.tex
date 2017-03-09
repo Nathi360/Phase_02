@@ -1,0 +1,17 @@
+\documentclass[11pt]{article}
+\usepackage{parskip}
+
+\begin{document}
+
+\section{Design Constraints}
+
+Design constraints are major factor to consider when designing anything in the real world. Taking the endless possibility of ones imagination for an idea and scaling it to real world application can be quite challenging but, without doing so the creation may never be feasible in its implementation. These same real world restrictions apply to the NavUP software as well. 
+
+Hardware constraints are a major issue for software developers in any field of the industry. With NavUP one would need to consider how certain taxing features will be implemented on older and less powerful hardware. Taxing operations such as real time heat mapping effecting how directions are generated and modified during runtime may need to be scaled to occur at intervals rather than constantly refreshing. This can be determined by the software based on the detected hardware that it is running on (1 GHz single core processor and 512 MB of RAM or less as an example). The geographical images could also be displayed at a lower resolution for phones that do not have a full high definition display. Battery life is another major factor to consider when designing an application for mobile devices. While running in the foreground all operations should continue as expected however, once the user places the application in the background or puts their phone into a sleep state it needs to halt all navigation and real time heat map updates. This will prolong the battery life of the phone as less energy will be expended on wasted processes that the user will not even utilise.
+
+Software constraints are another factor to consider. As this application is being developed for both the IOS and Android operating systems as well as, being able to be used thorough a browser there are multiple access channels that need to be considered. The application will need to be programmed differently for each operating system along with its web based form as well. This will include elements such as the graphical user interface. Communication between each platform will need to occur through the application for features such as heat mapping to be accurate. 
+
+With regards to constraints that do not include software or hardware but, involve a more social and ethical dilemma is that of privacy. The will need to provide consent to their location being used by the application. The information provided by the user will need to be kept in a secure format so that no information he or she has provided is compromised. The prompts for information sent to the user will also need to be limited to the requirements of the application so that it can run optimally. 
+
+\end{document}
+

@@ -1,0 +1,25 @@
+\documentclass[11pt]{article}
+\usepackage{parskip}
+
+\begin{document}
+
+\section{External Interface Requirements}
+
+External interface requirements are categorised under four main points. Each underlines an important interface aspect that will be fundamental to the successfully operation of the NavUP application and system. 
+
+\subsection{User Interfaces}
+User Interfaces
+The presentation of an application is as important as its underlying algorithms and components that make it tick. The appearance can chase away a user or draw them into using the application more and more. A simple interface that has large buttons for each option would be the most optimal solution. Having a menu appear first providing multiple options to the user such as enter directions, save a route, choose from common routes etc. The fonts will need to be clear and the text concise. Once the user has chosen their option they can be taken to the appropriate page, as in the case of entering a direction a text box can appear with an enter and cancel button. After directions have been entered the map should take up most of the display area. The only buttons that should be available is to cancel the navigation or modify it. This will allow the navigation to take up the largest portion of the display as it is the most important visual interface element. 
+The user interface should scale to different resolution sizes and resolutions above ultra-high definition should not be considered as well as, those below 720p. 
+
+\subsection{Hardware Interfaces}
+Beauty is not the only aspect of an application that needs to be accounted for. The guts of which this application runs on is extremely important. It needs to be optimised for ARM and Intel processors however, the main optimisation should be focused on ARM as that is the common mobile central processing unit platform. With regards to storage and main memory the application will also need to be reasonable in size (no more than 100 MB or so) and ensure that the assets that are loaded into main memory (images of the map for example) are not large as well. This is due to the limited processing and main memory resources available. Having an application take up most of those resources will result in poor performance for other programs and a lower battery life for the duration of its use. 
+
+\subsection{Software Interfaces}
+As there are three different platforms the software will be implemented on namely, IOS, Android and through web based browser access, it is important to ensure that these different platforms can communicate between each other. This communication will mainly occur through the heat maps as each device connected to the Wireless network will need to be queried for location so that a real time display for heat maps can be provided. With regards to data exchange the software will need to obtain position through hardware interfaces (Wi-Fi in this case) based on which Wireless router the device is connected to. This information along with the heat maps will be used along with user input (user’s destination) to generate a step by step directional output on the map interface which the user can interact with through the user interface.
+
+\subsection{Communication Interfaces}
+Communication for this application is key to its functional success. The main communication medium that will be used is the devices Wi-Fi connection which will be connected to the wireless routers located in various areas across campus. This will allow the user’s location to be determined, directions to be generated from the current location to the destination that the user has provided and update the heat maps based on how many other users are connected to the network and are currently using the application. Wi-Fi standards will also need to be considered as there are multiple bands, channels and protocols available. The 2.4 GHz frequency band is the common communication frequency used in wireless technologies. The application should cater for both of the data transfer rates of the 2.4 GHz and 5 GHz bands as performance would be wasted if the application does not keep up with the 5 GHz band.
+
+\end{document}
+
